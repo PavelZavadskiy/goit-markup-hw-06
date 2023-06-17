@@ -18,8 +18,13 @@
   <body>
     <header class="header">
       <div class="header-section container">
-        <nav class="navigation">
+        <nav class="header-navigation">
           <a class="link-logo link" href="./index.html">Web<span class="header-logo-link">Studio</span></a>
+          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="icon-mobile_menu" width="32" height="22">
+              <use href="./images/icons.svg#icon-mobile_menu"></use>
+            </svg>
+          </button>
           <ul class="header-menu list">
             <li class="list-element-menu">
               <a class="header-menu-link link" href="./index.html">Studio</a>
@@ -32,7 +37,7 @@
             </li>
           </ul>
         </nav>
-        <address class="contacts">
+        <address class="header-contacts">
           <ul class="list">
             <li class="list-element-contacts">
               <a class="header-contacts-link link" href="mailto:info@devstudio.com" target="_blank"
@@ -72,7 +77,16 @@
             <li class="portfolio-box">
               <a class="link" href="">
                 <div class="overlay-box">
-                  <img src="./images/portfolio_0.jpg" alt="Banking App Interface Concept" width="360" />
+                  <img
+                    srcset="
+                      ./images/portfolio_0_396.jpg 396w,
+                      ./images/portfolio_0_356.jpg 356w,
+                      ./images/portfolio_0.jpg     360w
+                    "
+                    src="./images/portfolio_0.jpg"
+                    alt="Cashless Payment"
+                    sizes="(max-width: 768px) 396px, (max-width: 1158px) 356px, 360px"
+                  />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                     Fruit Ecommerce App · Cloud Storage App
@@ -87,7 +101,16 @@
             <li class="portfolio-box">
               <a class="link" href="">
                 <div class="overlay-box">
-                  <img src="./images/portfolio_1.jpg" alt="Cashless Payment" width="360" />
+                  <img
+                    srcset="
+                      ./images/portfolio_1_396.jpg 396w,
+                      ./images/portfolio_1_356.jpg 356w,
+                      ./images/portfolio_1.jpg     360w
+                    "
+                    src="./images/portfolio_1.jpg"
+                    alt="Cashless Payment"
+                    sizes="(max-width: 768px) 396px, (max-width: 1158px) 356px, 360px"
+                  />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                     Fruit Ecommerce App · Cloud Storage App
@@ -102,7 +125,16 @@
             <li class="portfolio-box">
               <a class="link" href="">
                 <div class="overlay-box">
-                  <img src="./images/portfolio_2.jpg" alt="Meditation App" width="360" />
+                  <img
+                    srcset="
+                      ./images/portfolio_2_396.jpg 396w,
+                      ./images/portfolio_2_356.jpg 356w,
+                      ./images/portfolio_2.jpg     360w
+                    "
+                    src="./images/portfolio_2.jpg"
+                    alt="Cashless Payment"
+                    sizes="(max-width: 768px) 396px, (max-width: 1158px) 356px, 360px"
+                  />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                     Fruit Ecommerce App · Cloud Storage App
@@ -117,7 +149,16 @@
             <li class="portfolio-box">
               <a class="link" href="">
                 <div class="overlay-box">
-                  <img src="./images/portfolio_3.jpg" alt="Taxi Service" width="360" />
+                  <img
+                    srcset="
+                      ./images/portfolio_3_396.jpg 396w,
+                      ./images/portfolio_3_356.jpg 356w,
+                      ./images/portfolio_3.jpg     360w
+                    "
+                    src="./images/portfolio_3.jpg"
+                    alt="Cashless Payment"
+                    sizes="(max-width: 768px) 396px, (max-width: 1158px) 356px, 360px"
+                  />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                     Fruit Ecommerce App · Cloud Storage App
@@ -132,7 +173,16 @@
             <li class="portfolio-box">
               <a class="link" href="">
                 <div class="overlay-box">
-                  <img src="./images/portfolio_4.jpg" alt="Screen Illustrations" width="360" />
+                  <img
+                    srcset="
+                      ./images/portfolio_4_396.jpg 396w,
+                      ./images/portfolio_4_356.jpg 356w,
+                      ./images/portfolio_4.jpg     360w
+                    "
+                    src="./images/portfolio_4.jpg"
+                    alt="Cashless Payment"
+                    sizes="(max-width: 768px) 396px, (max-width: 1158px) 356px, 360px"
+                  />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                     Fruit Ecommerce App · Cloud Storage App
@@ -147,7 +197,16 @@
             <li class="portfolio-box">
               <a class="link" href="">
                 <div class="overlay-box">
-                  <img src="./images/portfolio_5.jpg" alt="Online Courses" width="360" />
+                  <img
+                    srcset="
+                      ./images/portfolio_5_396.jpg 396w,
+                      ./images/portfolio_5_356.jpg 356w,
+                      ./images/portfolio_5.jpg     360w
+                    "
+                    src="./images/portfolio_5.jpg"
+                    alt="Cashless Payment"
+                    sizes="(max-width: 768px) 396px, (max-width: 1158px) 356px, 360px"
+                  />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                     Fruit Ecommerce App · Cloud Storage App
@@ -162,7 +221,16 @@
             <li class="portfolio-box">
               <a class="link" href="">
                 <div class="overlay-box">
-                  <img src="./images/portfolio_6.jpg" alt="Instagram Stories Concept" width="360" />
+                  <img
+                    srcset="
+                      ./images/portfolio_6_396.jpg 396w,
+                      ./images/portfolio_6_356.jpg 356w,
+                      ./images/portfolio_6.jpg     360w
+                    "
+                    src="./images/portfolio_6.jpg"
+                    alt="Cashless Payment"
+                    sizes="(max-width: 768px) 396px, (max-width: 1158px) 356px, 360px"
+                  />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                     Fruit Ecommerce App · Cloud Storage App
@@ -177,7 +245,16 @@
             <li class="portfolio-box">
               <a class="link" href="">
                 <div class="overlay-box">
-                  <img src="./images/portfolio_7.jpg" alt="Organic Food" width="360" />
+                  <img
+                    srcset="
+                      ./images/portfolio_7_396.jpg 396w,
+                      ./images/portfolio_7_356.jpg 356w,
+                      ./images/portfolio_7.jpg     360w
+                    "
+                    src="./images/portfolio_7.jpg"
+                    alt="Cashless Payment"
+                    sizes="(max-width: 768px) 396px, (max-width: 1158px) 356px, 360px"
+                  />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                     Fruit Ecommerce App · Cloud Storage App
@@ -192,7 +269,16 @@
             <li class="portfolio-box">
               <a class="link" href="">
                 <div class="overlay-box">
-                  <img src="./images/portfolio_8.jpg" alt="Fresh Coffee" width="360" />
+                  <img
+                    srcset="
+                      ./images/portfolio_8_396.jpg 396w,
+                      ./images/portfolio_8_356.jpg 356w,
+                      ./images/portfolio_8.jpg     360w
+                    "
+                    src="./images/portfolio_8.jpg"
+                    alt="Cashless Payment"
+                    sizes="(max-width: 768px) 396px, (max-width: 1158px) 356px, 360px"
+                  />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                     Fruit Ecommerce App · Cloud Storage App
@@ -266,5 +352,64 @@
         </div>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="btn_menu js-close-menu" type="button">
+        <svg class="icon-btn-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="menu-container-nav list">
+        <li class="menu-container-nav-list-element">
+          <a class="link" href="./index.html">Studio</a>
+        </li>
+        <li class="menu-container-nav-list-element">
+          <a class="link is-active" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="menu-container-nav-list-element">
+          <a class="link" href="">Contacts</a>
+        </li>
+      </ul>
+      <ul class="menu-container-contacts list">
+        <li class="menu-container-contacts-element">
+          <a class="link" href="mailto:info@devstudio.com" target="_blank">info@devstudio.com</a>
+        </li>
+        <li class="menu-container-contacts-element">
+          <a class="link" href="tel:+110001111111" target="_blank">+11 (000) 111-11-11</a>
+        </li>
+      </ul>
+      <ul class="menu-container-social list">
+        <li class="menu-container-social-element">
+          <a class="link" href="https://www.instagram.com/" target="_blank">
+            <svg class="icon-menu-container" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-container-social-element">
+          <a class="link" href="https://twitter.com/" target="_blank">
+            <svg class="icon-menu-container" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-container-social-element">
+          <a class="link" href="https://facebook.com/" target="_blank">
+            <svg class="icon-menu-container" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-container-social-element">
+          <a class="link" href="https://www.linkedin.com/" target="_blank">
+            <svg class="icon-menu-container" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

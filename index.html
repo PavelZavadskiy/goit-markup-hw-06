@@ -18,8 +18,13 @@
   <body>
     <header class="header">
       <div class="header-section container">
-        <nav class="navigation">
+        <nav class="header-navigation">
           <a class="link-logo link" href="./index.html">Web<span class="header-logo-link">Studio</span></a>
+          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="icon-mobile_menu" width="32" height="22">
+              <use href="./images/icons.svg#icon-mobile_menu"></use>
+            </svg>
+          </button>
           <ul class="header-menu list">
             <li class="list-element-menu">
               <a class="header-menu-link link is-active" href="./index.html">Studio</a>
@@ -32,7 +37,7 @@
             </li>
           </ul>
         </nav>
-        <address class="contacts">
+        <address class="header-contacts">
           <ul class="list">
             <li class="list-element-contacts">
               <a class="header-contacts-link link" href="mailto:info@devstudio.com" target="_blank"
@@ -124,13 +129,13 @@
       <section class="team-section">
         <div class="container">
           <h2 class="second-title">Our Team</h2>
-          <ul class="list">
+          <ul class="list team-list">
             <li class="team-list-box">
               <img src="./images/photo_0.jpg" alt="Mark Guerrero" width="264" />
               <div class="team-name-position">
                 <h3 class="third-header">Mark Guerrero</h3>
                 <p class="paragraf">Product Designer</p>
-                <ul class="list">
+                <ul class="list team-name-list-social-link">
                   <li class="team-icon-box">
                     <a class="link" href="https://www.instagram.com/" target="_blank">
                       <svg class="icon" width="16" height="16">
@@ -167,7 +172,7 @@
               <div class="team-name-position">
                 <h3 class="third-header">Tom Ford</h3>
                 <p class="paragraf">Frontend Developer</p>
-                <ul class="list">
+                <ul class="list team-name-list-social-link">
                   <li class="team-icon-box">
                     <a class="link" href="https://www.instagram.com/" target="_blank">
                       <svg class="icon" width="16" height="16">
@@ -204,7 +209,7 @@
               <div class="team-name-position">
                 <h3 class="third-header">Camila Garcia</h3>
                 <p class="paragraf">Marketing</p>
-                <ul class="list">
+                <ul class="list team-name-list-social-link">
                   <li class="team-icon-box">
                     <a class="link" href="https://www.instagram.com/" target="_blank">
                       <svg class="icon" width="16" height="16">
@@ -241,7 +246,7 @@
               <div class="team-name-position">
                 <h3 class="third-header">Daniel Wilson</h3>
                 <p class="paragraf">UI Designer</p>
-                <ul class="list">
+                <ul class="list team-name-list-social-link">
                   <li class="team-icon-box">
                     <a class="link" href="https://www.instagram.com/" target="_blank">
                       <svg class="icon" width="16" height="16">
@@ -448,6 +453,64 @@
       </div>
     </div>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="btn_menu js-close-menu" type="button">
+        <svg class="icon-btn-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="menu-container-nav list">
+        <li class="menu-container-nav-list-element">
+          <a class="link is-active" href="./index.html">Studio</a>
+        </li>
+        <li class="menu-container-nav-list-element">
+          <a class="link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="menu-container-nav-list-element">
+          <a class="link" href="">Contacts</a>
+        </li>
+      </ul>
+      <ul class="menu-container-contacts list">
+        <li class="menu-container-contacts-element">
+          <a class="link" href="mailto:info@devstudio.com" target="_blank">info@devstudio.com</a>
+        </li>
+        <li class="menu-container-contacts-element">
+          <a class="link" href="tel:+110001111111" target="_blank">+11 (000) 111-11-11</a>
+        </li>
+      </ul>
+      <ul class="menu-container-social list">
+        <li class="menu-container-social-element">
+          <a class="link" href="https://www.instagram.com/" target="_blank">
+            <svg class="icon-menu-container" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-container-social-element">
+          <a class="link" href="https://twitter.com/" target="_blank">
+            <svg class="icon-menu-container" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-container-social-element">
+          <a class="link" href="https://facebook.com/" target="_blank">
+            <svg class="icon-menu-container" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-container-social-element">
+          <a class="link" href="https://www.linkedin.com/" target="_blank">
+            <svg class="icon-menu-container" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
